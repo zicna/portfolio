@@ -1,5 +1,5 @@
 * {
-    font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -14,7 +14,6 @@ section {
 footer {
   height: 500px;
   background-color: black;
-  
 }
 
 .hero {
@@ -23,35 +22,40 @@ footer {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 30px;
 }
 
 li {
-/* width: 200px; */
-text-decoration: none;
+  /* width: 200px; */
+  text-decoration: none;
 }
 
-h1{
-    font-size: 90px;
+h1 {
+  font-size: 90px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .hero-text {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .button {
-    width: 200px;
-    height: 60px;
-    background-color: coral;
-    border-radius: 30px;
-    text-align: center;
+  width: 200px;
+  height: 60px;
+  background-color: coral;
+  border-radius: 30px;
+  text-align: center;
 }
