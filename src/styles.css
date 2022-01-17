@@ -84,3 +84,14 @@ p {
 .socials {
     padding-bottom: 200px;
 }
+.social {
+margin: 20px;
+}
+
+.logo {
+  height: 80px;
+  margin: 30px;
+}
+i {
+  color: coral;
+}
