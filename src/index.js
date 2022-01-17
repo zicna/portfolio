@@ -1,0 +1,1 @@
+const hambugerButton = document.getElementById("hamburger")

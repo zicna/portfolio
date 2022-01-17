@@ -7,8 +7,10 @@ section {
 }
 
 footer {
-  height: 500px;
+  padding: 80px;
   background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .hero {
@@ -130,6 +132,13 @@ border-radius: 150px;
   display: flex;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 1000px){
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .project-card {
   width: 300px;
   height: 500px;
@@ -153,6 +162,28 @@ hr {
 .project-link {
   text-decoration: none;
   color: #ef744b 
+}
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width:1000px){
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+  }
+
+  ul {
+    display: none;
+  }
 }
 

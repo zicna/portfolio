@@ -14,16 +14,19 @@
       <nav>
         <div class="logo"><i class="fas fa-project-diagram fa-3x"></i></div>
         <ul>
-          <li>About me</li>
-          <li>Projects</li>
-          <li>Contact me</li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
       </nav>
       <div class="hero-area">
           <div class="hero-text">
               <h1>Milan Zivkovic</h1>
               <p>Full Stack Developer</p>
-              <div class="button">About me</div>
+              <div class="button"><a href="#about-me">About me</a></div>
           </div>
           <div class="socials">
               <div class="social"><a href="https://www.linkedin.com/in/milan-m-zivkovic/" target="_blank"><i class="fab fa-linkedin fa-lg"></a></i></div>
@@ -33,7 +36,7 @@
           </div>
       </div>
       </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About me</h2>
             <p>Hello. My name is Milan. I am Full Stack Software Developer</p>
@@ -41,7 +44,7 @@
         <div class="headshot-container"><img class="headshot" src="./images/IMG_2832.jpeg" alt="Milan Zivkovic headshot"></div>
     </section>
 
-    <section class="sub-section-alternative">
+    <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-card">
@@ -74,7 +77,10 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>milanzivkovic1987@gmail.com</p>
+    </footer>
     <script src="src/index.js"></script>
     <script src="http://kit.fontawesome.com/e6e834d06c.js"> </script>
   </body>
