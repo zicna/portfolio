@@ -124,8 +124,6 @@ i {
   padding: 80px;
 }
 
-
-
 .headshot {
 width: 300px;
 border-radius: 150px;
@@ -215,5 +213,9 @@ a {
   .logo {
     display: none;
   }
+}
+
+#contact-form {
+  display: none;
 }
 
