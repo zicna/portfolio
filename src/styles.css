@@ -92,6 +92,10 @@ p {
     color: #808080
 }
 
+.btn-center {
+  margin: auto;
+}
+
 .socials {
     padding-bottom: 200px;
 }

@@ -78,8 +78,16 @@
         </div>
     </section>
     <footer id="contact-me">
-        <h2>Contact me</h2>
-        <p>milanzivkovic1987@gmail.com</p>
+        <div class="button btn-center" id="btn-contact">Contact me</div>
+        <form action="https://formsubmit.co/zivkovicmilan1987@gmail.com" method="POST">
+            <input type="text" name="name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <!-- * This is for thank you page -->
+            <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+            <input type="hidden" name="_subject" value="New email!">
+            <input type="text" name="message" placeholder="write your message here" required>
+            <button type="submit">Send</button>
+       </form>
     </footer>
     <script src="src/index.js"></script>
     <script src="http://kit.fontawesome.com/e6e834d06c.js"> </script>
