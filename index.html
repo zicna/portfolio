@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/styles.css" />
     
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
-<title>Portfolio</title>
+<title>Milan Zivkovic Portfolio</title>
   </head>
   <body>
     <section class="hero">
@@ -79,14 +79,26 @@
     </section>
     <footer id="contact-me">
         <div class="button btn-center" id="btn-contact">Contact me</div>
-        <form action="https://formsubmit.co/zivkovicmilan1987@gmail.com" method="POST">
-            <input type="text" name="name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+        <form id="contact-form" action="https://formsubmit.co/zivkovicmilan1987@gmail.com" method="POST">
+            <div>
+                <label for="name">name: </label>
+                <input type="text" name="name" id="name" required placeholder="your name" >
+            </div>
+            <div>
+                <label for="email">email: </label>
+                <input type="email" name="email" placeholder="example@example.com" required>
+            </div>
             <!-- * This is for thank you page -->
             <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
-            <input type="hidden" name="_subject" value="New email!">
-            <input type="text" name="message" placeholder="write your message here" required>
-            <button type="submit">Send</button>
+            <input type="hidden" name="_subject" value="Portfolio">
+            <div>
+                <label for="message">your message: </label>
+                <textarea name="message" id="message" row="8" cols="60" required></textarea>>
+            </div>
+            <div>
+                <button type="submit" id="btn-cancel-submit">Cancel</button>
+                <button type="submit" id="btn-submit-form">Send</button>
+            </div>
        </form>
     </footer>
     <script src="src/index.js"></script>
