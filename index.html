@@ -27,7 +27,7 @@
           <div class="hero-text">
               <h1>Milan Zivkovic</h1>
               <p>Full Stack Developer</p>
-              <div class="btn-lg"><a href="#about-me">About me</a></div>
+              <div class="btn btn-lg"><a href="#about-me">About me</a></div>
           </div>
           <div class="socials">
               <div class="social"><a href="https://www.linkedin.com/in/milan-m-zivkovic/" target="_blank"><i class="fab fa-linkedin fa-lg"></a></i></div>
@@ -79,32 +79,30 @@
         </div>
     </section>
     <footer id="contact-me">
-        <button class="btn-lg btn-center" id="btn-contact">Contact me</button>
+        <button class="btn btn-lg btn-center" id="btn-contact">Contact me</button>
         <!-- action="https://formsubmit.co/zivkovicmilan1987@gmail.com" method="POST" -->
         
             <form id="contact-form" class="form-container" >
-                <fieldset>
                     <legend>Contact form</legend>
                     <div>
-                        <label for="name">name: </label>
-                        <input type="text" name="name" id="name" required placeholder="your name" >
+                        <!-- <label for="name">name: </label> -->
+                        <input type="text" name="name" id="name" required placeholder="  name" >
                     </div>
                     <div>
-                        <label for="email">email: </label>
-                        <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                        <!-- <label for="email">email: </label> -->
+                        <input type="email" name="email" id="email" placeholder="   email" required>
                     </div>
                     <!-- * This is for thank you page -->
                     <!-- <input type="hidden" name="_next" value="https://milan-zivkovic.com/pages/thankyou.html"> -->
                     <input type="hidden" name="_subject" value="Portfolio">
                     <div>
-                        <label for="message">your message: </label>
-                        <textarea name="message" id="message" row="8" cols="60" required></textarea>
+                        <!-- <label for="message">your message: </label> -->
+                        <textarea name="message" id="message" row="8" cols="60" placeholder="  your message here  "required></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="btn-sm" id="btn-cancel-submit">Cancel</button>
-                        <button type="submit" class="btn-sm" id="btn-submit-form">Send</button>
+                        <button type="submit" class="btn btn-sm" id="btn-cancel-submit">Cancel</button>
+                        <button type="submit" class="btn btn-sm" id="btn-submit-form">Send</button>
                     </div>
-                </fieldset>
             </form>
     </footer>
     <script src="src/index.js"></script>
