@@ -12,6 +12,7 @@ section {
 }
 
 footer {
+  /* height: 420px; */
   padding: 80px;
   background-color: black;
   color: white;
@@ -60,6 +61,36 @@ p {
   font-weight: 300;
 }
 
+input,
+textarea {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  min-width: 200px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+legend {
+  /* display: inline-block; */
+  color: coral;
+  font-size: large;
+  padding: 15px;
+  /* border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20xp; */
+}
+
 .subtext {
   font-size: 15px;
   font-weight: 300px;
@@ -75,22 +106,24 @@ p {
   margin-left: 40px;
   margin-bottom: 200px;
 }
-
-.btn-lg {
+.btn {
+  cursor: pointer;
   display: inline-block;
   border: none;
+  color: white;
+  text-align: center;
+  background-color: coral;
+}
+.btn-lg {
   min-width: 200px;
   min-height: 55px;
-  background-color: coral;
   border-radius: 30px;
-  text-align: center;
   font-size: 30px;
   font-weight: 300;
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px;
-  color:white;
 }
 
 .but-lg:hover {
@@ -103,21 +136,15 @@ p {
 }
 
 .btn-sm {
-  display: inline-block;
-  border: none;
   width: 100px;
   height: 30px;
-  background-color: coral;
   border-radius: 15px;
-  text-align: center;
   font-size: 15px;
   font-weight: 300;
   padding-top: 2px;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 10px;
-  color:white;
-
 }
 
 .but-sm:hover {
@@ -197,19 +224,9 @@ i {
   margin-top: 25px;
 }
 
-hr {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .project-link {
   text-decoration: none;
   color: #ef744b;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }
 
 .hamburger {
@@ -257,11 +274,10 @@ a {
 }
 
 .form-container {
+  border-radius: 20px;
+  padding: 15px;
   margin: auto;
   width: 800px;
-  height: 250px;
+  height: 300px;
   background-color: rgb(48, 48, 48);
-}
-fieldset {
-  color: coral;
 }
