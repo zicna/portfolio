@@ -4,6 +4,7 @@ const contactButton = document.getElementById('btn-contact')
 const contactForm = document.getElementById('contact-form')
 const btnCancelSubmit = document.getElementById('btn-cancel-submit')
 const btnSubmitForm = document.getElementById('btn-submit-form')
+const infoSection = document.getElementById('info-section')
 
 const toggleButton = () => {
   navList.classList.toggle('show')
@@ -20,18 +21,30 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   })
 })
 
-
 // * show form when contact button is clicked and change display contact button
-contactButton.addEventListener('click', () => {
-  if (contactForm.style.display === 'none' || contactForm.style.display === '') {
+contactButton.addEventListener('click', toggleForm)
+
+function toggleForm() {
+  if (
+    contactForm.style.display === 'none' ||
+    contactForm.style.display === ''
+  ) {
     contactForm.style.display = 'block'
     contactButton.style.display = 'none'
   } else {
     contactForm.style.display = 'none'
+    contactButton.style.display = 'block'
   }
-})
-
+}
 btnCancelSubmit.addEventListener('click', () => {
   contactForm.style.display = 'none'
   contactButton.style.display = 'block'
+})
+
+btnSubmitForm.addEventListener('click', (e) => {
+  if()
+  contactForm.reset()
+  toggleForm()
+  window.alert('successful submition')
+
 })
