@@ -41,7 +41,6 @@ const toggleForm = () => {
 contactButton.addEventListener('click', toggleForm)
 btnCancelSubmit.addEventListener('click', toggleForm)
 
-
 btnSubmitForm.addEventListener('click', (e) => {
   if (
     inputName.value === '' ||
@@ -52,6 +51,6 @@ btnSubmitForm.addEventListener('click', (e) => {
   } else {
     contactForm.reset()
     toggleForm()
-    setTimeout(() => alert('Thank you for contacting me!'), 1000)
+    setTimeout(() => alert('Thank you for contacting me!'), 500)
   }
 })
