@@ -19,10 +19,11 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
     })
   })
 })
+
+
 // * show form when contact button is clicked and change display contact button
 contactButton.addEventListener('click', () => {
-  console.log('contact me ahs been clicked')
-  if (contactForm.style.display === 'none') {
+  if (contactForm.style.display === 'none' || contactForm.style.display === '') {
     contactForm.style.display = 'block'
     contactButton.style.display = 'none'
   } else {
@@ -31,10 +32,6 @@ contactButton.addEventListener('click', () => {
 })
 
 btnCancelSubmit.addEventListener('click', () => {
-    contactForm.style.display = 'none'
-    contactButton.style.display = 'block'
+  contactForm.style.display = 'none'
+  contactButton.style.display = 'block'
 })
-
-
-
-
