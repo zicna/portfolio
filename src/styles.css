@@ -72,6 +72,10 @@ textarea {
   min-width: 200px;
 }
 
+input:focus, textarea:focus {
+  background-color: lightblue;
+}
+
 hr {
   margin-left: 20px;
   margin-right: 20px;
@@ -83,13 +87,9 @@ a {
 }
 
 legend {
-  /* display: inline-block; */
   color: coral;
   font-size: large;
   padding: 15px;
-  /* border-radius: 20px;
-  padding: 10px 20px;
-  margin: 20xp; */
 }
 
 .subtext {
