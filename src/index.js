@@ -26,9 +26,7 @@ hambugerButton.addEventListener('click', toggleButton)
 // })
 
 // * show form when contact button is clicked and change display contact button
-contactButton.addEventListener('click', toggleForm)
-
-function toggleForm() {
+const toggleForm = () => {
   if (
     contactForm.style.display === 'none' ||
     contactForm.style.display === ''
@@ -40,10 +38,9 @@ function toggleForm() {
     contactButton.style.display = 'block'
   }
 }
-btnCancelSubmit.addEventListener('click', () => {
-  contactForm.style.display = 'none'
-  contactButton.style.display = 'block'
-})
+contactButton.addEventListener('click', toggleForm)
+btnCancelSubmit.addEventListener('click', toggleForm)
+
 
 btnSubmitForm.addEventListener('click', (e) => {
   if (
