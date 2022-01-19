@@ -10,7 +10,7 @@
 <title>Milan Zivkovic Portfolio</title>
   </head>
   <body>
-    <section class="hero">
+    <section class="hero" id="hero">
       <nav >
         <div class="logo"><i class="fas fa-project-diagram fa-3x"></i></div>
         <ul id="nav-list">
@@ -22,6 +22,7 @@
             <i class="fas fa-bars"></i>
         </button>
       </nav>
+      <div id="info-section"></div>
       <div class="hero-area">
           <div class="hero-text">
               <h1>Milan Zivkovic</h1>
@@ -79,7 +80,8 @@
     </section>
     <footer id="contact-me">
         <div class="button btn-center" id="btn-contact">Contact me</div>
-        <form id="contact-form" action="https://formsubmit.co/zivkovicmilan1987@gmail.com" method="POST">
+        <!-- action="https://formsubmit.co/zivkovicmilan1987@gmail.com" method="POST" -->
+        <form id="contact-form" >
             <div>
                 <label for="name">name: </label>
                 <input type="text" name="name" id="name" required placeholder="your name" >
@@ -97,7 +99,7 @@
             </div>
             <div>
                 <button type="submit" id="btn-cancel-submit">Cancel</button>
-                <button type="submit" id="btn-submit-form">Send</button>
+                <button type="submit" id="btn-submit-form"><a href="#hero" style="color:black">Send</a></button>
             </div>
        </form>
     </footer>
