@@ -12,7 +12,6 @@ section {
 }
 
 footer {
-  /* height: 420px; */
   padding: 80px;
   background-color: black;
   color: white;
@@ -35,7 +34,7 @@ nav {
 ul {
   display: flex;
   list-style-type: none;
-  width: 500px;
+  width: 600px;
   justify-content: space-around;
   font-size: 30px;
 }
@@ -46,6 +45,15 @@ ul.show {
 
 li {
   text-decoration: none;
+  border-top: 4px solid coral;
+}
+li a:hover {
+  color: #ef744b;
+}
+li a::before {
+  content: '';
+  display: block;
+  height: 5px;
 }
 
 h1 {
@@ -72,7 +80,8 @@ textarea {
   min-width: 200px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   background-color: lightblue;
 }
 
@@ -253,12 +262,14 @@ i {
     display: none;
     background-color: #2b2c38;
     margin: 0;
+    max-width: 100%;
   }
 
   nav {
     align-items: flex-start;
     flex-direction: column-reverse;
     background-color: #2b2c38;
+    
   }
 
   ul.show {
