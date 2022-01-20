@@ -43,19 +43,6 @@ ul.show {
   display: block;
 }
 
-li {
-  text-decoration: none;
-  border-top: 4px solid coral;
-}
-li a:hover {
-  color: #ef744b;
-}
-li a::before {
-  content: '';
-  display: block;
-  height: 5px;
-}
-
 h1 {
   font-size: 50px;
   margin: 0;
