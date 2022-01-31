@@ -1,6 +1,13 @@
+/* * reseting CSS */
 * {
-  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+/* * font are being inherited  */
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -256,7 +263,6 @@ i {
     align-items: flex-start;
     flex-direction: column-reverse;
     background-color: #2b2c38;
-    
   }
 
   ul.show {
